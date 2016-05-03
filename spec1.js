@@ -15,7 +15,6 @@ describe('News Page', function() {
     expect(element(by.className('news')).isDisplayed()).toBe(true);
   });
 
-
   it('modal close', function() {
     link.click();
     var btn = element(by.id('closebtn'));
@@ -23,13 +22,11 @@ describe('News Page', function() {
     expect(element(by.className('all_news')).isDisplayed()).toBe(true);
   });
 
-
   it('check navigation to mainpage after click on Currency Exchange', function() {
       var ebtn = element(by.id('ebtn'));
       ebtn.click();
       expect(browser.getCurrentUrl()).toEqual('http://localhost/index.html#/');
     });
-
 
   it('check navigation to mainpage after click on Exchange app', function() {
       var hbtn = element(by.id('hbtn'));
