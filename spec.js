@@ -49,6 +49,4 @@ describe('Exchange Page', function() {
   		nbtn1.click();
     	expect(browser.getCurrentUrl()).toEqual('http://localhost/index.html#/news');
     });
-  
-
 });
