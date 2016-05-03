@@ -1,0 +1,24 @@
+<div class="all_news">
+    <div class="row">
+        <h1>News</h1>
+    </div>
+    <hr>
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Published On:</th>
+                <th>Title</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="news_item in newsData | orderBy :'-published_at' ">
+                <td>{{news_item.published_at | date:'medium'}}</td>
+                <td>{{news_item.title}}</td>
+                <td><a href="" id="link" ng-click="open(news_item)">Read</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

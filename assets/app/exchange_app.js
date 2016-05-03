@@ -1,0 +1,1 @@
+var exchangeApp = angular.module("ExchangeApp", ["ngRoute", "ngSanitize", "ui.bootstrap"]);

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ExchangeApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Exchange and News | By Naveen Singh</title>
+    <link rel="stylesheet" href="assets/bower_components/angular-bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<script src="assets/data/news_data.js"></script> <!-- pulled in json from personal blog -->
+<script src="assets/bower_components/angular/angular.min.js"></script>
+<script src="assets/bower_components/angular-route/angular-route.min.js"></script>
+<script src="assets/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="assets/bower_components/angular-bootstrap/ui-bootstrap-tpls-0.14.3.min.js"></script>
+<script src="assets/app/exchange_app.js"></script>
+<script src="assets/app/routes.js"></script>
+<script src="assets/app/controllers/ExchangeAppController.js"></script>
+<script src="assets/app/controllers/ExchangeNewsController.js"></script>
+<script src="assets/app/controllers/SingleNewsItemController.js"></script>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/" id="hbtn">ExchangeApp</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#/" id="ebtn">Currency Exchange</a></li>
+                <li><a href="#/news" id="nbtn">News</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container margin-top-75" ng-view></div>
+
+</body>
+</html>
